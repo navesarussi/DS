@@ -1,12 +1,12 @@
 // כל הנתונים הלא-מתורגמים של העסק - עדכנו כאן ותפוצץ בכל האתר.
 // טקסטים (כותרות, תיאורים) נמצאים ב-src/lib/i18n/dictionaries.ts.
 
-// חשוב: המספר "0434109987" נמסר בהודעה קולית/מוקלדת שבה גם הופיע "61" לפני המספר,
-// כך שיכול להיות שיש בו טעות הקלדה. בדקו ותקנו כאן אם צריך.
+// מספר אוסטרלי: 0434 109 987 (מקומי) → +61 434 109 987 (בינלאומי).
 const RAW_PHONE = "0434109987";
+const COUNTRY_CODE = "61";
 
 function toIntl(local: string) {
-  return local.startsWith("0") ? `972${local.slice(1)}` : local;
+  return local.startsWith("0") ? `${COUNTRY_CODE}${local.slice(1)}` : local;
 }
 
 export const siteConfig = {
@@ -16,7 +16,7 @@ export const siteConfig = {
     { id: "osher", initials: "OB" },
   ],
   contact: {
-    phoneDisplay: RAW_PHONE,
+    phoneDisplay: "+61 434 109 987",
     phoneTel: `+${toIntl(RAW_PHONE)}`,
     whatsappNumber: toIntl(RAW_PHONE),
     email: "navesarussi@gmail.com",
