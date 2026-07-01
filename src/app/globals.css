@@ -26,8 +26,100 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-heebo), Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--brand-blue-light) 28%, transparent);
+  color: var(--brand-navy);
+}
+
+/* ---- Motion system -------------------------------------------------------- */
+
+@keyframes sd-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes sd-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes sd-float {
+  0%,
+  100% {
+    transform: translateY(0) translateX(0);
+  }
+  50% {
+    transform: translateY(-26px) translateX(10px);
+  }
+}
+
+@keyframes sd-menu-in {
+  from {
+    opacity: 0;
+    transform: translateY(-6px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Scroll-reveal: hidden until observed, then eases up into place. */
+.sd-reveal {
+  opacity: 0;
+}
+
+.sd-reveal.is-visible {
+  animation: sd-fade-up 0.65s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.sd-float {
+  animation: sd-float 11s ease-in-out infinite;
+}
+
+.sd-menu-in {
+  animation: sd-menu-in 0.16s ease-out both;
+}
+
+/* Subtle dotted grid used behind the hero for depth. */
+.sd-grid {
+  background-image: radial-gradient(
+    circle at 1px 1px,
+    rgba(255, 255, 255, 0.12) 1px,
+    transparent 0
+  );
+  background-size: 28px 28px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .sd-reveal,
+  .sd-reveal.is-visible {
+    opacity: 1 !important;
+    animation: none !important;
+  }
+  .sd-float,
+  .sd-menu-in {
+    animation: none !important;
+  }
 }
