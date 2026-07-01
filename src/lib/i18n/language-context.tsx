@@ -4,7 +4,7 @@ import { createContext, useContext, useEffect, useState } from "react";
 import { type Locale, dictionaries, locales } from "./dictionaries";
 
 const STORAGE_KEY = "sd-lang";
-const DEFAULT_LOCALE: Locale = "he";
+const DEFAULT_LOCALE: Locale = "en";
 
 function isLocale(value: unknown): value is Locale {
   return typeof value === "string" && (locales as string[]).includes(value);

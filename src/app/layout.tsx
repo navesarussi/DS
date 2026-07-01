@@ -12,14 +12,14 @@ const heebo = Heebo({
 });
 
 export const metadata: Metadata = {
-  title: "ScaleDigital | פתרונות דיגיטליים לעסקים",
+  title: "ScaleDigital | Digital Presence That Brings Customers",
   description:
-    "ScaleDigital מלווה עסקים קטנים ובינוניים לבניית נוכחות דיגיטלית, נוכחות בגוגל מפות, אתרים, צ׳אטבוטים ועוזרים אישיים חכמים - כדי להביא יותר לקוחות ולהגדיל הכנסות.",
+    "We build digital presence that brings customers for small and medium businesses — Google Maps visibility, fast websites, chatbots, and AI assistants. Founded by two software engineers.",
   openGraph: {
-    title: "ScaleDigital | פתרונות דיגיטליים לעסקים",
+    title: "ScaleDigital | Digital Presence That Brings Customers",
     description:
-      "בונים לעסק שלכם נוכחות דיגיטלית שמביאה לקוחות: גוגל מפות, אתרים, צ׳אטבוטים ועוזרים אישיים חכמים.",
-    locale: "he_IL",
+      "We build digital presence that brings customers for small and medium businesses — Google Maps visibility, fast websites, chatbots, and AI assistants.",
+    locale: "en_US",
     type: "website",
   },
 };
@@ -31,8 +31,8 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="he"
-      dir="rtl"
+      lang="en"
+      dir="ltr"
       suppressHydrationWarning
       className={`${heebo.variable} h-full antialiased`}
     >
