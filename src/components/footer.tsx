@@ -1,6 +1,10 @@
+"use client";
+
 import { siteConfig } from "@/lib/site-config";
+import { useLanguage } from "@/lib/i18n/language-context";
 
 export function Footer() {
+  const { dict } = useLanguage();
   const year = new Date().getFullYear();
 
   return (
@@ -9,11 +13,9 @@ export function Footer() {
         <p className="text-lg font-extrabold text-brand-navy">
           {siteConfig.businessName}
         </p>
-        <p className="text-sm text-slate-500">
-          נוה סרוסי ואושר ברון | פתרונות דיגיטליים לעסקים
-        </p>
+        <p className="text-sm text-slate-500">{dict.footer.tagline}</p>
         <p className="text-xs text-slate-400">
-          &copy; {year} {siteConfig.businessName}. כל הזכויות שמורות.
+          &copy; {year} {siteConfig.businessName}. {dict.footer.rights}
         </p>
       </div>
     </footer>

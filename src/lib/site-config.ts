@@ -1,4 +1,5 @@
-// כל פרטי העסק במקום אחד - עדכנו כאן ותפוצץ בכל האתר.
+// כל הנתונים הלא-מתורגמים של העסק - עדכנו כאן ותפוצץ בכל האתר.
+// טקסטים (כותרות, תיאורים) נמצאים ב-src/lib/i18n/dictionaries.ts.
 
 // חשוב: המספר "0434109987" נמסר בהודעה קולית/מוקלדת שבה גם הופיע "61" לפני המספר,
 // כך שיכול להיות שיש בו טעות הקלדה. בדקו ותקנו כאן אם צריך.
@@ -10,59 +11,38 @@ function toIntl(local: string) {
 
 export const siteConfig = {
   businessName: "ScaleDigital",
-  tagline: "פתרונות דיגיטליים לעסקים קטנים ובינוניים",
   founders: [
-    {
-      name: "נוה סרוסי",
-      role: "מייסד שותף | מהנדס תוכנה",
-      bio: "מהנדס תוכנה ובוגר יחידה טכנולוגית בחיל האוויר, צה״ל.",
-      initials: "נס",
-    },
-    {
-      name: "אושר ברון",
-      role: "מייסד שותף | מהנדס תוכנה",
-      bio: "מהנדס תוכנה ובוגר יחידה טכנולוגית בחיל האוויר, צה״ל.",
-      initials: "אב",
-    },
+    { id: "nave", initials: "NS" },
+    { id: "osher", initials: "OB" },
   ],
   contact: {
     phoneDisplay: RAW_PHONE,
     phoneTel: `+${toIntl(RAW_PHONE)}`,
     whatsappNumber: toIntl(RAW_PHONE),
-    whatsappMessage: "היי! ראיתי את האתר של ScaleDigital ואשמח לשמוע איך תוכלו לעזור לעסק שלי להתקדם דיגיטלית 🚀",
     email: "navesarussi@gmail.com",
   },
   portfolio: [
     {
-      name: "KupaPay",
-      description: "אפליקציית מובייל ל-App Store לניהול תשלומים.",
+      id: "kupapay",
       url: "https://apps.apple.com/app/kupapay/id6780216665",
-      tag: "אפליקציית iOS",
     },
     {
-      name: "Karma Community",
-      description: "אתר קהילה דיגיטלי מלא לניהול וחיבור בין חברי קהילה.",
+      id: "karma",
       url: "https://karma-community-kc.com/",
-      tag: "אתר קהילה",
     },
     {
-      name: "Glowe",
-      description: "פלטפורמת ווב חדשנית שפותחה עבור קהילת Karma.",
+      id: "glowe",
       url: "https://dev.karma-community.pages.dev/glowe/",
-      tag: "פלטפורמת ווב",
     },
   ],
 } as const;
 
-export function whatsappHref() {
-  const { whatsappNumber, whatsappMessage } = siteConfig.contact;
-  return `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+export function whatsappHref(message: string) {
+  return `https://wa.me/${siteConfig.contact.whatsappNumber}?text=${encodeURIComponent(message)}`;
 }
 
-export function mailtoHref() {
-  return `mailto:${siteConfig.contact.email}?subject=${encodeURIComponent(
-    "פנייה מהאתר - ScaleDigital"
-  )}`;
+export function mailtoHref(subject: string) {
+  return `mailto:${siteConfig.contact.email}?subject=${encodeURIComponent(subject)}`;
 }
 
 export function telHref() {
