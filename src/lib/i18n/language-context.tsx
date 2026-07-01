@@ -1,14 +1,10 @@
 "use client";
 
-import { createContext, useContext, useEffect, useState } from "react";
-import { type Locale, dictionaries, locales } from "./dictionaries";
+import { createContext, useContext } from "react";
+import { useRouter } from "next/navigation";
+import { type Locale, dictionaries } from "./dictionaries";
 
-const STORAGE_KEY = "sd-lang";
-const DEFAULT_LOCALE: Locale = "en";
-
-function isLocale(value: unknown): value is Locale {
-  return typeof value === "string" && (locales as string[]).includes(value);
-}
+const COOKIE_NAME = "sd-lang";
 
 type LanguageContextValue = {
   locale: Locale;
@@ -18,38 +14,20 @@ type LanguageContextValue = {
 
 const LanguageContext = createContext<LanguageContextValue | null>(null);
 
-// Runs before hydration to set <html lang/dir> from a previous choice, avoiding
-// a flash of the default language. Only Hebrew is RTL.
-export const LANGUAGE_INIT_SCRIPT = `(function() {
-  try {
-    var lang = localStorage.getItem("${STORAGE_KEY}");
-    if (lang === "he" || lang === "en" || lang === "fr") {
-      document.documentElement.lang = lang;
-      document.documentElement.dir = lang === "he" ? "rtl" : "ltr";
-    }
-  } catch (e) {}
-})();`;
-
-export function LanguageProvider({ children }: { children: React.ReactNode }) {
-  const [locale, setLocaleState] = useState<Locale>(DEFAULT_LOCALE);
-
-  useEffect(() => {
-    // One-time sync from localStorage, an external system unavailable during SSR.
-    const stored = window.localStorage.getItem(STORAGE_KEY);
-    if (isLocale(stored)) {
-      // eslint-disable-next-line react-hooks/set-state-in-effect
-      setLocaleState(stored);
-    }
-  }, []);
-
-  useEffect(() => {
-    document.documentElement.lang = dictionaries[locale].htmlLang;
-    document.documentElement.dir = dictionaries[locale].dir;
-  }, [locale]);
+export function LanguageProvider({
+  locale,
+  children,
+}: {
+  locale: Locale;
+  children: React.ReactNode;
+}) {
+  const router = useRouter();
 
   const setLocale = (next: Locale) => {
-    window.localStorage.setItem(STORAGE_KEY, next);
-    setLocaleState(next);
+    if (next === locale) return;
+    // Remembered so a future visit to "/" lands back on this language.
+    document.cookie = `${COOKIE_NAME}=${next}; path=/; max-age=31536000; samesite=lax`;
+    router.push(`/${next}`);
   };
 
   return (
