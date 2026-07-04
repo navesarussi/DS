@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { Menu, MessageCircle, X } from "lucide-react";
 import { siteConfig, whatsappHref } from "@/lib/site-config";
 import { useLanguage } from "@/lib/i18n/language-context";
@@ -25,10 +26,22 @@ export function Header() {
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-5 py-3.5">
         <a
           href="#top"
-          className="text-xl font-extrabold tracking-tight text-brand-navy"
+          dir="ltr"
+          aria-label={siteConfig.businessName}
+          className="flex items-center gap-2.5"
         >
-          {siteConfig.businessName}
-          <span className="text-brand-blue-light">.</span>
+          <Image
+            src="/scaledigital-mark.png"
+            alt=""
+            width={863}
+            height={541}
+            priority
+            className="h-8 w-auto"
+          />
+          <span className="text-xl font-extrabold tracking-tight text-brand-navy">
+            {siteConfig.businessName}
+            <span className="text-brand-blue-light">.</span>
+          </span>
         </a>
 
         <nav className="hidden items-center gap-6 lg:flex">

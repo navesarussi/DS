@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { siteConfig } from "@/lib/site-config";
 import { useLanguage } from "@/lib/i18n/language-context";
 
@@ -12,10 +13,21 @@ export function Footer() {
       <div className="mx-auto flex max-w-6xl flex-col items-center gap-3 px-5 text-center">
         <a
           href="#top"
-          className="text-xl font-extrabold tracking-tight text-brand-navy"
+          dir="ltr"
+          aria-label={siteConfig.businessName}
+          className="flex flex-col items-center gap-2"
         >
-          {siteConfig.businessName}
-          <span className="text-brand-blue-light">.</span>
+          <Image
+            src="/scaledigital-mark.png"
+            alt=""
+            width={863}
+            height={541}
+            className="h-10 w-auto"
+          />
+          <span className="text-xl font-extrabold tracking-tight text-brand-navy">
+            {siteConfig.businessName}
+            <span className="text-brand-blue-light">.</span>
+          </span>
         </a>
         <p className="text-sm text-slate-500">{dict.footer.tagline}</p>
         <p className="text-xs text-slate-400">

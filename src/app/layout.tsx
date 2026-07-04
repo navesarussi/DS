@@ -12,6 +12,7 @@ const heebo = Heebo({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://ds-one-iota.vercel.app"),
   title: "ScaleDigital | פתרונות דיגיטליים לעסקים",
   description:
     "ScaleDigital מלווה עסקים קטנים ובינוניים לבניית נוכחות דיגיטלית, נוכחות בגוגל מפות, אתרים, צ׳אטבוטים ועוזרים אישיים חכמים - כדי להביא יותר לקוחות ולהגדיל הכנסות.",
@@ -19,8 +20,16 @@ export const metadata: Metadata = {
     title: "ScaleDigital | פתרונות דיגיטליים לעסקים",
     description:
       "בונים לעסק שלכם נוכחות דיגיטלית שמביאה לקוחות: גוגל מפות, אתרים, צ׳אטבוטים ועוזרים אישיים חכמים.",
+    siteName: "ScaleDigital",
+    url: "https://ds-one-iota.vercel.app",
     locale: "he_IL",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "ScaleDigital | פתרונות דיגיטליים לעסקים",
+    description:
+      "בונים לעסק שלכם נוכחות דיגיטלית שמביאה לקוחות: גוגל מפות, אתרים, צ׳אטבוטים ועוזרים אישיים חכמים.",
   },
 };
 
