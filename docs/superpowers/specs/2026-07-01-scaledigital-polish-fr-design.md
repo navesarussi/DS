@@ -9,8 +9,7 @@
 ## 1. Context & Goals
 
 ScaleDigital is a single-page marketing site (Next.js 16, React 19, Tailwind v4, TypeScript) for a
-new digital-solutions studio run by two software engineers (Nave Sarussi & Osher Baron), alumni of an
-elite IAF technological unit.
+new digital-solutions studio run by two experienced software engineers (Nave Sarussi & Osher Baron).
 
 **Current reality (decisive constraint):** the business is at the very beginning. It has **no clients
 yet** and is seeking its **first clients**. The "portfolio" items (KupaPay, Karma Community, Glowe) are
@@ -39,8 +38,8 @@ testimonials, no invented client counts.
 
 **Tone:** professional, trustworthy, refined (chosen). Applied honestly for an early-stage studio:
 
-- Lean on **real** credibility: software engineers, elite IAF tech-unit background, direct founder
-  access, modern AI-driven approach, transparency.
+- Lean on **real** credibility: experienced software engineers, years of building real software,
+  direct founder access, modern AI-driven approach, transparency.
 - Reframe the portfolio truthfully as **"products we designed and built"** — proof of *capability*,
   not claims of past client work.
 - Include a **subtle** "founding clients" angle (approved): e.g. a quiet line such as
