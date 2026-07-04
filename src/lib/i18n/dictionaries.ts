@@ -52,7 +52,11 @@ type Dictionary = {
   services: {
     eyebrow: string;
     title: string;
-    items: { title: string; description: string }[];
+    items: {
+      title: string;
+      description: string;
+      demoLabel?: string;
+    }[];
   };
   portfolio: {
     eyebrow: string;
@@ -195,6 +199,12 @@ export const dictionaries: Record<Locale, Dictionary> = {
           title: "עוזרי AI אישיים",
           description:
             "עוזר דיגיטלי שמנהל פניות, תיאומים ומעקבים, ומשחרר לכם זמן לעסק עצמו.",
+        },
+        {
+          title: "מענה טלפוני חכם עם AI",
+          description:
+            "עוזר קולי מבוסס AI שעונה לשיחות של הלקוחות שלכם, מספק מידע מדויק ומנתב לשלוחה או לנציג הנכון — כבר בפעולה אצלנו, לא רק רעיון.",
+          demoLabel: "נסו את הדמו החי",
         },
         {
           title: "אסטרטגיית צמיחה דיגיטלית",
@@ -404,6 +414,12 @@ export const dictionaries: Record<Locale, Dictionary> = {
           title: "Personal AI Assistants",
           description:
             "A digital assistant that handles inquiries, scheduling, and follow-ups, freeing your time for the business itself.",
+        },
+        {
+          title: "AI Voice Phone Assistant",
+          description:
+            "An AI-powered voice assistant that answers your customers' calls, gives accurate information, and routes them to the right extension or team member — already live and running, not just a concept.",
+          demoLabel: "Try the live demo",
         },
         {
           title: "Digital Growth Strategy",
@@ -616,6 +632,12 @@ export const dictionaries: Record<Locale, Dictionary> = {
           title: "Assistants IA personnels",
           description:
             "Un assistant digital qui gère les demandes, les rendez-vous et les relances, et vous libère du temps pour votre activité.",
+        },
+        {
+          title: "Assistant vocal IA pour le téléphone",
+          description:
+            "Un assistant vocal basé sur l'IA qui répond aux appels de vos clients, fournit des informations précises et les redirige vers le bon poste ou la bonne personne — déjà opérationnel chez nous, pas juste une idée.",
+          demoLabel: "Essayer la démo en direct",
         },
         {
           title: "Stratégie de croissance digitale",
