@@ -33,8 +33,8 @@ export function Header() {
           <Image
             src="/scaledigital-mark.png"
             alt=""
-            width={863}
-            height={541}
+            width={405}
+            height={256}
             priority
             className="h-8 w-auto"
           />

@@ -112,7 +112,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
     meta: {
       title: "ScaleDigital | נוכחות דיגיטלית שמביאה לקוחות",
       description:
-        "בונים לעסקים קטנים ובינוניים נוכחות דיגיטלית שמביאה לקוחות — נראות ב-Google Maps, אתרים מהירים, צ׳אטבוטים ועוזרי AI. הוקם בידי שני מהנדסי תוכנה.",
+        "בונים לעסקים קטנים ובינוניים נוכחות דיגיטלית שמביאה לקוחות — נראות ב-Google Maps, אתרים מהירים, צ׳אטבוטים, אוטומציות (Make, n8n) ועוזרי AI. הוקם בידי שני מהנדסי תוכנה.",
     },
     nav: {
       about: "מי אנחנו",
@@ -209,7 +209,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
         {
           title: "אוטומציה מותאמת אישית",
           description:
-            "מחברים בין המערכות שלכם ובונים תהליכים אוטומטיים שחוסכים שעות עבודה ומבטלים משימות ידניות חוזרות.",
+            "אוטומציות מותאמות אישית עם Make, n8n ועוד — מחברים CRM, גיליונות, וואטסאפ ומייל לתהליכים שחוסכים שעות ומבטלים העתקות ידניות.",
         },
         {
           title: "אסטרטגיית צמיחה דיגיטלית",
@@ -331,7 +331,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
     meta: {
       title: "ScaleDigital | Digital Presence That Brings Customers",
       description:
-        "We build digital presence that brings customers for small and medium businesses — Google Maps visibility, fast websites, chatbots, and AI assistants. Founded by two software engineers.",
+        "We build digital presence that brings customers for small and medium businesses — Google Maps visibility, fast websites, chatbots, Make & n8n automations, and AI assistants. Founded by two software engineers.",
     },
     nav: {
       about: "About",
@@ -429,7 +429,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
         {
           title: "Custom Automation",
           description:
-            "We connect your tools and build automated workflows that save hours of work and eliminate repetitive manual tasks.",
+            "Custom workflows with Make, n8n, and more — we connect your CRM, spreadsheets, WhatsApp, and email so repetitive tasks run on autopilot.",
         },
         {
           title: "Digital Growth Strategy",
@@ -554,7 +554,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
     meta: {
       title: "ScaleDigital | Une présence digitale qui attire des clients",
       description:
-        "Nous créons pour les petites et moyennes entreprises une présence digitale qui attire des clients : Google Maps, sites web, chatbots et assistants IA. Fondé par deux ingénieurs logiciels.",
+        "Nous créons pour les petites et moyennes entreprises une présence digitale qui attire des clients : Google Maps, sites web, chatbots, automatisations Make & n8n et assistants IA. Fondé par deux ingénieurs logiciels.",
     },
     nav: {
       about: "À propos",
@@ -652,7 +652,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
         {
           title: "Automatisation sur mesure",
           description:
-            "Nous connectons vos outils et créons des flux automatisés qui font gagner des heures de travail et suppriment les tâches manuelles répétitives.",
+            "Automatisations sur mesure avec Make, n8n et plus — nous relions CRM, tableurs, WhatsApp et e-mail pour que les tâches répétitives tournent toutes seules.",
         },
         {
           title: "Stratégie de croissance digitale",
