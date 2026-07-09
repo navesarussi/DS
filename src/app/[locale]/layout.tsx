@@ -4,6 +4,7 @@ import { Heebo } from "next/font/google";
 import "../globals.css";
 import { LanguageProvider } from "@/lib/i18n/language-context";
 import { dictionaries, locales, type Locale } from "@/lib/i18n/dictionaries";
+import { siteConfig } from "@/lib/site-config";
 
 const heebo = Heebo({
   variable: "--font-heebo",
@@ -35,7 +36,7 @@ export async function generateMetadata({
   const dict = dictionaries[locale];
 
   return {
-    metadataBase: new URL("https://ds-one-iota.vercel.app"),
+    metadataBase: new URL(siteConfig.siteUrl),
     title: dict.meta.title,
     description: dict.meta.description,
     openGraph: {

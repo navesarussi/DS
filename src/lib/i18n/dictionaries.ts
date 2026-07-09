@@ -128,7 +128,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
       titleLine1: "נוכחות דיגיטלית שמביאה",
       titleHighlight: "לקוחות אמיתיים",
       subtitle:
-        "אנחנו בונים לעסקים קטנים ובינוניים נוכחות דיגיטלית שעובדת: נראות ב-Google Maps, אתר מהיר שממיר גולשים לפניות, וצ׳אטבוט או עוזר AI שזמין ללקוחות מסביב לשעון. פחות עומס עליכם, יותר לקוחות אצלכם.",
+        "אנחנו בונים לעסקים קטנים ובינוניים נוכחות דיגיטלית שעובדת: נראות ב-Google Maps, אתר מהיר, צ׳אטבוטים, אוטומציות (Make, n8n) ועוזר AI — זמינים ללקוחות מסביב לשעון. פחות עומס עליכם, יותר לקוחות אצלכם.",
       note: "אנחנו בתחילת הדרך ומקבלים מספר מצומצם של לקוחות מייסדים — ליווי צמוד ותשומת לב מלאה.",
       ctaPrimary: "לשיחת ייעוץ חינם",
       ctaSecondary: "לשירותים שלנו",
@@ -257,7 +257,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
         {
           title: "בנייה והשקה",
           description:
-            "מקימים את הנוכחות הדיגיטלית: Google Maps, אתר, בוט או עוזר AI.",
+            "מקימים את הנוכחות הדיגיטלית: Google Maps, אתר, בוט, עוזר AI ואוטומציות (Make, n8n).",
         },
         {
           title: "ליווי וצמיחה",
@@ -278,7 +278,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
         {
           question: "כמה זה עולה?",
           answer:
-            "המחיר תלוי בהיקף — אתר, בוט או ליווי מלא. בשיחת האבחון החינמית נבין מה אתם צריכים וניתן הצעת מחיר ברורה, בלי אותיות קטנות.",
+            "המחיר תלוי בהיקף — אתר, בוט, אוטומציה או ליווי מלא. בשיחת האבחון החינמית נבין מה אתם צריכים וניתן הצעת מחיר ברורה, בלי אותיות קטנות.",
         },
         {
           question: "כמה זמן לוקח להקים?",
@@ -294,6 +294,11 @@ export const dictionaries: Record<Locale, Dictionary> = {
           question: "אני לא מבין בטכנולוגיה, זו בעיה?",
           answer:
             "ממש לא. אנחנו מתרגמים הכול לשפה פשוטה ומטפלים בצד הטכני. אתם מתעסקים בעסק, אנחנו בדיגיטל.",
+        },
+        {
+          question: "מה זה אוטומציה עם Make או n8n?",
+          answer:
+            "זה חיבור בין הכלים שכבר יש לכם — CRM, גיליונות, וואטסאפ, מייל — כך שמשימות חוזרות (לידים, תזכורות, דוחות) רצות לבד. אנחנו בונים, בודקים ומלווים אתכם, בלי שתצטרכו לגעת בקוד.",
         },
       ],
     },
@@ -348,7 +353,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
       titleLine1: "Digital Presence That Brings",
       titleHighlight: "Real Customers",
       subtitle:
-        "We build working digital presence for small and medium businesses: visibility on Google Maps, a fast website that turns visitors into leads, and a chatbot or AI assistant available to your customers around the clock. Less on your plate, more customers at your door.",
+        "We build working digital presence for small and medium businesses: Google Maps visibility, a fast website, smart chatbots, Make & n8n automations, and AI assistants — available to your customers around the clock. Less on your plate, more customers at your door.",
       note: "We're just getting started and taking on a select few founding clients — close guidance and our full attention.",
       ctaPrimary: "Book a Free Consultation",
       ctaSecondary: "Our Services",
@@ -480,7 +485,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
         {
           title: "Build & Launch",
           description:
-            "We set up your digital presence: Google Maps, website, bot, or AI assistant.",
+            "We set up your digital presence: Google Maps, website, bots, AI assistants, and Make & n8n automations.",
         },
         {
           title: "Guidance & Growth",
@@ -501,7 +506,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
         {
           question: "How much does it cost?",
           answer:
-            "It depends on scope — a website, a bot, or full guidance. In the free discovery call we'll understand what you need and give you a clear quote, no fine print.",
+            "It depends on scope — a website, bot, automation workflow, or full guidance. In the free discovery call we'll understand what you need and give you a clear quote, no fine print.",
         },
         {
           question: "How long does it take?",
@@ -517,6 +522,11 @@ export const dictionaries: Record<Locale, Dictionary> = {
           question: "I'm not tech-savvy — is that a problem?",
           answer:
             "Not at all. We translate everything into plain language and handle the technical side. You run the business; we run the digital.",
+        },
+        {
+          question: "What is Make or n8n automation?",
+          answer:
+            "We connect the tools you already use — CRM, spreadsheets, WhatsApp, email — so repetitive tasks (leads, reminders, reports) run on autopilot. We design, test, and maintain the workflows; you don't touch code.",
         },
       ],
     },
@@ -571,7 +581,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
       titleLine1: "Une présence digitale qui attire",
       titleHighlight: "de vrais clients",
       subtitle:
-        "Nous créons pour les petites et moyennes entreprises une présence digitale efficace : visibilité sur Google Maps, un site rapide qui transforme les visiteurs en contacts, et un chatbot ou assistant IA disponible pour vos clients 24h/24. Moins de charge pour vous, plus de clients pour votre entreprise.",
+        "Nous créons pour les petites et moyennes entreprises une présence digitale efficace : Google Maps, site rapide, chatbots, automatisations Make & n8n et assistants IA — disponibles pour vos clients 24h/24. Moins de charge pour vous, plus de clients pour votre entreprise.",
       note: "Nous débutons et accueillons un nombre limité de clients fondateurs — un accompagnement rapproché et toute notre attention.",
       ctaPrimary: "Réserver une consultation gratuite",
       ctaSecondary: "Nos services",
@@ -704,7 +714,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
         {
           title: "Réalisation et lancement",
           description:
-            "Nous mettons en place votre présence digitale : Google Maps, site, bot ou assistant IA.",
+            "Nous mettons en place votre présence digitale : Google Maps, site, bots, assistants IA et automatisations Make & n8n.",
         },
         {
           title: "Accompagnement et croissance",
@@ -725,7 +735,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
         {
           question: "Combien ça coûte ?",
           answer:
-            "Cela dépend du périmètre — un site, un bot ou un accompagnement complet. Lors de l'appel de découverte gratuit, nous comprenons vos besoins et vous remettons un devis clair, sans petits caractères.",
+            "Cela dépend du périmètre — un site, un bot, une automatisation ou un accompagnement complet. Lors de l'appel de découverte gratuit, nous comprenons vos besoins et vous remettons un devis clair, sans petits caractères.",
         },
         {
           question: "Combien de temps faut-il ?",
@@ -741,6 +751,11 @@ export const dictionaries: Record<Locale, Dictionary> = {
           question: "Je ne suis pas à l'aise avec la technologie — est-ce un problème ?",
           answer:
             "Pas du tout. Nous traduisons tout en langage simple et gérons la partie technique. Vous vous occupez de votre activité, nous du digital.",
+        },
+        {
+          question: "Qu'est-ce que l'automatisation avec Make ou n8n ?",
+          answer:
+            "Nous relions les outils que vous utilisez déjà — CRM, tableurs, WhatsApp, e-mail — pour que les tâches répétitives (leads, rappels, rapports) tournent toutes seules. Nous concevons, testons et maintenons les flux ; vous n'avez pas à toucher au code.",
         },
       ],
     },

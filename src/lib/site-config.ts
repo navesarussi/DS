@@ -11,6 +11,7 @@ function toIntl(local: string) {
 
 export const siteConfig = {
   businessName: "ScaleDigital",
+  siteUrl: "https://scaledigital.vercel.app",
   founders: [
     { id: "nave", initials: "NS" },
     { id: "osher", initials: "OB" },
