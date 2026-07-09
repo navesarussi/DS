@@ -207,6 +207,11 @@ export const dictionaries: Record<Locale, Dictionary> = {
           demoLabel: "נסו את הדמו החי",
         },
         {
+          title: "אוטומציה מותאמת אישית",
+          description:
+            "מחברים בין המערכות שלכם ובונים תהליכים אוטומטיים שחוסכים שעות עבודה ומבטלים משימות ידניות חוזרות.",
+        },
+        {
           title: "אסטרטגיית צמיחה דיגיטלית",
           description:
             "תוכנית ברורה עם יעדים מדידים: יותר חשיפה, יותר לידים ויותר הכנסות לאורך זמן.",
@@ -420,6 +425,11 @@ export const dictionaries: Record<Locale, Dictionary> = {
           description:
             "An AI-powered voice assistant that answers your customers' calls, gives accurate information, and routes them to the right extension or team member — already live and running, not just a concept.",
           demoLabel: "Try the live demo",
+        },
+        {
+          title: "Custom Automation",
+          description:
+            "We connect your tools and build automated workflows that save hours of work and eliminate repetitive manual tasks.",
         },
         {
           title: "Digital Growth Strategy",
@@ -638,6 +648,11 @@ export const dictionaries: Record<Locale, Dictionary> = {
           description:
             "Un assistant vocal basé sur l'IA qui répond aux appels de vos clients, fournit des informations précises et les redirige vers le bon poste ou la bonne personne — déjà opérationnel chez nous, pas juste une idée.",
           demoLabel: "Essayer la démo en direct",
+        },
+        {
+          title: "Automatisation sur mesure",
+          description:
+            "Nous connectons vos outils et créons des flux automatisés qui font gagner des heures de travail et suppriment les tâches manuelles répétitives.",
         },
         {
           title: "Stratégie de croissance digitale",

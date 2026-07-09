@@ -1,11 +1,11 @@
 "use client";
 
-import { ArrowUpLeft, ArrowUpRight, Bot, Globe, MapPin, Phone, Sparkles, TrendingUp } from "lucide-react";
+import { ArrowUpLeft, ArrowUpRight, Bot, Cog, Globe, MapPin, Phone, Sparkles, TrendingUp } from "lucide-react";
 import { useLanguage } from "@/lib/i18n/language-context";
 import { Reveal } from "@/components/reveal";
 import { siteConfig } from "@/lib/site-config";
 
-const ICONS = [MapPin, Globe, Bot, Phone, Sparkles, TrendingUp];
+const ICONS = [MapPin, Globe, Bot, Phone, Cog, Sparkles, TrendingUp];
 
 export function Services() {
   const { dict, locale } = useLanguage();
