@@ -52,7 +52,11 @@ type Dictionary = {
   services: {
     eyebrow: string;
     title: string;
-    items: { title: string; description: string }[];
+    items: {
+      title: string;
+      description: string;
+      demoLabel?: string;
+    }[];
   };
   portfolio: {
     eyebrow: string;
@@ -120,7 +124,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
       menuLabel: "פתיחת תפריט",
     },
     hero: {
-      badge: "הוקם בידי מהנדסי תוכנה, בוגרי יחידה טכנולוגית מובחרת בחיל האוויר",
+      badge: "הוקם בידי שני מהנדסי תוכנה מנוסים",
       titleLine1: "נוכחות דיגיטלית שמביאה",
       titleHighlight: "לקוחות אמיתיים",
       subtitle:
@@ -158,18 +162,18 @@ export const dictionaries: Record<Locale, Dictionary> = {
     about: {
       eyebrow: "מי אנחנו",
       title: "שני מהנדסי תוכנה שבנו את ScaleDigital",
-      body: "אנחנו נוה סרוסי ואושר ברון, מהנדסי תוכנה ובוגרי יחידה טכנולוגית מובחרת בחיל האוויר. את הדיוק, המשמעת והחשיבה ההנדסית שרכשנו בצבא אנחנו מביאים לעולם העסקי — כדי לבנות לעסקים קטנים ובינוניים נוכחות דיגיטלית שמייצרת תוצאות, לא סתם עוד אתר יפה.",
+      body: "אנחנו נוה סרוסי ואושר ברון, שני מהנדסי תוכנה מנוסים. את הדיוק, הקפדנות והחשיבה ההנדסית שרכשנו בשנים של פיתוח תוכנה אנחנו מביאים לעולם העסקי — כדי לבנות לעסקים קטנים ובינוניים נוכחות דיגיטלית שמייצרת תוצאות, לא סתם עוד אתר יפה.",
     },
     founders: {
       nave: {
         name: "נוה סרוסי",
         role: "מייסד שותף · מהנדס תוכנה",
-        bio: "מהנדס תוכנה ובוגר יחידה טכנולוגית מובחרת בחיל האוויר.",
+        bio: "מהנדס תוכנה מנוסה, עם רקע בפיתוח מוצרים ומערכות דיגיטליות.",
       },
       osher: {
         name: "אושר ברון",
         role: "מייסד שותף · מהנדס תוכנה",
-        bio: "מהנדס תוכנה ובוגר יחידה טכנולוגית מובחרת בחיל האוויר.",
+        bio: "מהנדס תוכנה מנוסה, עם רקע בפיתוח מוצרים ומערכות דיגיטליות.",
       },
     },
     services: {
@@ -195,6 +199,17 @@ export const dictionaries: Record<Locale, Dictionary> = {
           title: "עוזרי AI אישיים",
           description:
             "עוזר דיגיטלי שמנהל פניות, תיאומים ומעקבים, ומשחרר לכם זמן לעסק עצמו.",
+        },
+        {
+          title: "מענה טלפוני חכם עם AI",
+          description:
+            "עוזר קולי מבוסס AI שעונה לשיחות של הלקוחות שלכם, מספק מידע מדויק ומנתב לשלוחה או לנציג הנכון — כבר בפעולה אצלנו, לא רק רעיון.",
+          demoLabel: "נסו את הדמו החי",
+        },
+        {
+          title: "אוטומציה מותאמת אישית",
+          description:
+            "מחברים בין המערכות שלכם ובונים תהליכים אוטומטיים שחוסכים שעות עבודה ומבטלים משימות ידניות חוזרות.",
         },
         {
           title: "אסטרטגיית צמיחה דיגיטלית",
@@ -329,7 +344,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
     },
     hero: {
       badge:
-        "Founded by software engineers, alumni of an elite Israeli Air Force technology unit",
+        "Founded by two experienced software engineers",
       titleLine1: "Digital Presence That Brings",
       titleHighlight: "Real Customers",
       subtitle:
@@ -367,18 +382,18 @@ export const dictionaries: Record<Locale, Dictionary> = {
     about: {
       eyebrow: "Who We Are",
       title: "Two Software Engineers Behind ScaleDigital",
-      body: "We're Nave Sarussi and Osher Baron — software engineers and alumni of an elite Israeli Air Force technology unit. We bring the precision, discipline, and engineering mindset we built in the military into the business world, to give small and medium businesses a digital presence that delivers results — not just another good-looking website.",
+      body: "We're Nave Sarussi and Osher Baron — two experienced software engineers. We bring the precision, rigor, and engineering mindset we built over years of writing real software into the business world, to give small and medium businesses a digital presence that delivers results — not just another good-looking website.",
     },
     founders: {
       nave: {
         name: "Nave Sarussi",
         role: "Co-Founder · Software Engineer",
-        bio: "Software engineer and alumnus of an elite Israeli Air Force technology unit.",
+        bio: "Software engineer with a background in building digital products and systems.",
       },
       osher: {
         name: "Osher Baron",
         role: "Co-Founder · Software Engineer",
-        bio: "Software engineer and alumnus of an elite Israeli Air Force technology unit.",
+        bio: "Software engineer with a background in building digital products and systems.",
       },
     },
     services: {
@@ -404,6 +419,17 @@ export const dictionaries: Record<Locale, Dictionary> = {
           title: "Personal AI Assistants",
           description:
             "A digital assistant that handles inquiries, scheduling, and follow-ups, freeing your time for the business itself.",
+        },
+        {
+          title: "AI Voice Phone Assistant",
+          description:
+            "An AI-powered voice assistant that answers your customers' calls, gives accurate information, and routes them to the right extension or team member — already live and running, not just a concept.",
+          demoLabel: "Try the live demo",
+        },
+        {
+          title: "Custom Automation",
+          description:
+            "We connect your tools and build automated workflows that save hours of work and eliminate repetitive manual tasks.",
         },
         {
           title: "Digital Growth Strategy",
@@ -541,7 +567,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
     },
     hero: {
       badge:
-        "Fondé par des ingénieurs logiciels, anciens d'une unité technologique d'élite de l'armée de l'air israélienne",
+        "Fondé par deux ingénieurs logiciels expérimentés",
       titleLine1: "Une présence digitale qui attire",
       titleHighlight: "de vrais clients",
       subtitle:
@@ -579,18 +605,18 @@ export const dictionaries: Record<Locale, Dictionary> = {
     about: {
       eyebrow: "Qui sommes-nous",
       title: "Deux ingénieurs logiciels derrière ScaleDigital",
-      body: "Nous sommes Nave Sarussi et Osher Baron, ingénieurs logiciels et anciens d'une unité technologique d'élite de l'armée de l'air israélienne. Nous apportons au monde des affaires la précision, la rigueur et l'esprit d'ingénierie acquis dans l'armée, pour offrir aux petites et moyennes entreprises une présence digitale qui produit des résultats — pas seulement un joli site de plus.",
+      body: "Nous sommes Nave Sarussi et Osher Baron, deux ingénieurs logiciels expérimentés. Nous apportons au monde des affaires la précision, la rigueur et l'esprit d'ingénierie acquis au fil d'années de développement logiciel, pour offrir aux petites et moyennes entreprises une présence digitale qui produit des résultats — pas seulement un joli site de plus.",
     },
     founders: {
       nave: {
         name: "Nave Sarussi",
         role: "Cofondateur · Ingénieur logiciel",
-        bio: "Ingénieur logiciel et ancien d'une unité technologique d'élite de l'armée de l'air israélienne.",
+        bio: "Ingénieur logiciel avec une expérience dans le développement de produits et de systèmes numériques.",
       },
       osher: {
         name: "Osher Baron",
         role: "Cofondateur · Ingénieur logiciel",
-        bio: "Ingénieur logiciel et ancien d'une unité technologique d'élite de l'armée de l'air israélienne.",
+        bio: "Ingénieur logiciel avec une expérience dans le développement de produits et de systèmes numériques.",
       },
     },
     services: {
@@ -616,6 +642,17 @@ export const dictionaries: Record<Locale, Dictionary> = {
           title: "Assistants IA personnels",
           description:
             "Un assistant digital qui gère les demandes, les rendez-vous et les relances, et vous libère du temps pour votre activité.",
+        },
+        {
+          title: "Assistant vocal IA pour le téléphone",
+          description:
+            "Un assistant vocal basé sur l'IA qui répond aux appels de vos clients, fournit des informations précises et les redirige vers le bon poste ou la bonne personne — déjà opérationnel chez nous, pas juste une idée.",
+          demoLabel: "Essayer la démo en direct",
+        },
+        {
+          title: "Automatisation sur mesure",
+          description:
+            "Nous connectons vos outils et créons des flux automatisés qui font gagner des heures de travail et suppriment les tâches manuelles répétitives.",
         },
         {
           title: "Stratégie de croissance digitale",

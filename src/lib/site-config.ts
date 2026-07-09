@@ -35,6 +35,11 @@ export const siteConfig = {
       url: "https://dev.karma-community.pages.dev/glowe/",
     },
   ],
+  voiceDemoUrl: {
+    he: "https://voice.panther2000.com/he/",
+    en: "https://voice.panther2000.com/en/",
+    fr: "https://voice.panther2000.com/en/",
+  },
 } as const;
 
 export function whatsappHref(message: string) {

@@ -35,6 +35,7 @@ export async function generateMetadata({
   const dict = dictionaries[locale];
 
   return {
+    metadataBase: new URL("https://ds-one-iota.vercel.app"),
     title: dict.meta.title,
     description: dict.meta.description,
     openGraph: {
