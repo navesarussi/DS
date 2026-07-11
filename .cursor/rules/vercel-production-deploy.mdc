@@ -1,0 +1,32 @@
+---
+description: Deploy every change to Vercel production immediately so updates are visible right away
+alwaysApply: true
+---
+
+# Vercel Production — Immediate Deploy
+
+The owner wants **every change live in production immediately** via Vercel.
+
+## After completing code changes
+
+1. **Commit** with a clear message (when the user asked for the change or implied shipping it).
+2. **Push to `main`** on `origin` — Vercel auto-deploys production from this branch.
+3. **Confirm deployment** — check Vercel (MCP or dashboard) or share the production URL when done.
+4. **Do not stop** with only local or uncommitted work unless the user explicitly says not to deploy yet.
+
+## If Vercel CLI is available
+
+```bash
+vercel deploy --prod
+```
+
+Prefer `git push origin main` when the repo is connected to Vercel Git integration.
+
+## Production URL
+
+- Site: https://scaledigital-sd.com (see `siteConfig.siteUrl` in `src/lib/site-config.ts`)
+
+## When pushing
+
+- Never force-push to `main`.
+- Do not push unless the user requested the change or clearly expects it shipped.
