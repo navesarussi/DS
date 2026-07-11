@@ -1,8 +1,8 @@
 // כל הנתונים הלא-מתורגמים של העסק - עדכנו כאן ותפוצץ בכל האתר.
 // טקסטים (כותרות, תיאורים) נמצאים ב-src/lib/i18n/dictionaries.ts.
 
-// מספר אוסטרלי: 0434 109 987 (מקומי) → +61 434 109 987 (בינלאומי).
-const RAW_PHONE = "0434109987";
+// מספר אוסטרלי: 08 7666 2740 (מקומי) → +61 8 7666 2740 (בינלאומי).
+const RAW_PHONE = "0876662740";
 const COUNTRY_CODE = "61";
 
 function toIntl(local: string) {
@@ -17,7 +17,7 @@ export const siteConfig = {
     { id: "osher", initials: "OB" },
   ],
   contact: {
-    phoneDisplay: "+61 434 109 987",
+    phoneDisplay: "+61 8 7666 2740",
     phoneTel: `+${toIntl(RAW_PHONE)}`,
     whatsappNumber: toIntl(RAW_PHONE),
     email: "scaledigital2au@gmail.com",
