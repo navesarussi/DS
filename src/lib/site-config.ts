@@ -3,6 +3,8 @@
 
 // מספר אוסטרלי: 08 7666 2740 (מקומי) → +61 8 7666 2740 (בינלאומי).
 const RAW_PHONE = "0876662740";
+// WhatsApp עדיין על המספר הקודם עד שהחדש יהיה פעיל שם.
+const RAW_WHATSAPP = "0434109987";
 const COUNTRY_CODE = "61";
 
 function toIntl(local: string) {
@@ -19,7 +21,8 @@ export const siteConfig = {
   contact: {
     phoneDisplay: "+61 8 7666 2740",
     phoneTel: `+${toIntl(RAW_PHONE)}`,
-    whatsappNumber: toIntl(RAW_PHONE),
+    whatsappDisplay: "+61 434 109 987",
+    whatsappNumber: toIntl(RAW_WHATSAPP),
     email: "scaledigital2au@gmail.com",
   },
   portfolio: [

@@ -14,7 +14,7 @@ export function Contact() {
       key: "whatsapp",
       icon: MessageCircle,
       label: dict.contact.whatsapp.label,
-      value: dict.contact.whatsapp.value,
+      value: siteConfig.contact.whatsappDisplay,
       href: whatsappHref(dict.contact.whatsappMessage),
       external: true,
     },
